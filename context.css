@@ -1,0 +1,72 @@
+/* Brief workshop: assembled instructions on paper, evidence on the workbench. */
+.brief-intro{display:grid;grid-template-columns:1fr 1fr;gap:38px;align-items:start}
+.brief-recipe{background:#eae2d3;color:#2b261f;padding:27px;border:1px solid #f7eddd;border-radius:10px;box-shadow:0 12px 30px #0002}
+.brief-ingredient{display:flex;align-items:start;gap:15px;padding:23px 0;border-bottom:1px solid #3b301c25}
+.brief-ingredient:last-child{border-bottom:0;padding-bottom:5px}
+.brief-ingredient>span{font-size:9px;color:#82715e;margin-top:4px}
+.brief-ingredient>.icon{width:20px;height:20px;color:#906432;flex-shrink:0;margin-top:2px}
+.brief-ingredient h3{font-size:24px;line-height:1.1}
+.brief-ingredient p{font-size:12px;line-height:1.7;color:#6e6050;margin-top:7px}
+.brief-assignment{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:38px;padding:29px;border:1px solid var(--line);border-radius:10px;background:var(--panel)}
+.brief-assignment h2{font-size:30px;margin:14px 0 12px;line-height:1.1}
+.brief-assignment p{font-size:13px;color:var(--mut);line-height:1.8;max-width:380px}
+.brief-assignment-action{flex-shrink:0}.brief-assignment-action>span{display:block;font-size:11px;line-height:1.8;color:var(--mut);margin-bottom:17px}
+.brief-disclosure{font-size:11px;color:var(--mut);line-height:1.8;margin-top:20px;max-width:630px}
+.brief-task{display:flex;align-items:start;gap:16px;border-block:1px solid var(--line);padding:22px 0;margin-bottom:27px}
+.brief-task-icon{color:var(--amber);padding-top:3px}.brief-task p{font-size:16px;color:#d9cebd;line-height:1.7;max-width:700px;margin-top:9px}
+.brief-case-switch{display:grid;grid-template-columns:1fr auto;gap:13px 20px;margin-bottom:32px;outline:0}
+.brief-case-switch h2{font-size:22px}.brief-case-switch>div>p{font-size:11px;color:var(--mut);margin-top:7px}
+.brief-case-buttons{display:flex;align-items:center;gap:8px}
+.brief-case-buttons button{display:flex;align-items:center;gap:9px;border:1px solid var(--line);border-radius:7px;background:var(--panel);color:var(--mut);padding:13px;font-size:11px}
+.brief-case-buttons button[aria-pressed=true]{color:var(--ink);border-color:#b17d3e;background:#2b2012}
+.brief-case-buttons button>span{font-size:9px;color:var(--amber);display:grid;place-items:center;width:15px}
+.brief-case-buttons .icon{width:15px;height:15px}
+.brief-case-description{grid-column:1/-1;font-size:12px;color:#bcad97;border-left:2px solid #9b713b;padding:8px 12px;background:#f2a94e05}
+.brief-workbench{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:26px;align-items:start}
+.brief-controls{min-width:0}.brief-files{display:grid;gap:11px}
+.brief-file{padding:18px;border:1px solid var(--line);background:var(--panel);border-radius:8px;transition:border-color .16s,background .16s}
+.brief-file.included{border-color:#8b6738;background:#211a10}
+.brief-file-top{display:flex;align-items:center;gap:11px}
+.brief-file-top>.icon{width:20px;height:20px;color:var(--amber);flex-shrink:0}
+.brief-file h3{font:500 13px/1.4 var(--body);letter-spacing:0}.brief-file-top span{display:block;font-size:9px;color:var(--mut);margin-top:5px}
+.brief-file-top button{display:grid;place-items:center;margin-left:auto;width:40px;height:40px;border-radius:50%;flex-shrink:0;border:1px solid #786040;color:var(--amber);background:transparent}
+.brief-file-top button[aria-pressed=true]{background:var(--amber);border-color:var(--amber);color:var(--ground)}
+.brief-file-top button:hover{border-color:var(--amber)}.brief-file-top button .icon{width:18px;height:18px}
+.brief-file>p{font-size:12px;color:#bdb1a1;line-height:1.85;margin-top:17px}
+.brief-rules{margin-top:28px;padding-top:26px;border-top:1px solid var(--line)}.brief-rules .field+.field{margin-top:19px}
+.brief-rules .field select{font-size:12px;min-height:48px;max-width:100%}
+.brief-prompt-paper{position:sticky;top:110px;padding:25px;background:#eae2d3;color:#2b261f;border:1px solid #f7eddd;border-radius:10px;min-width:0;box-shadow:0 12px 30px #0002}
+.brief-prompt-paper .studio-paper-top{font-size:10px}.brief-prompt-paper .studio-paper-top>span{font-size:8px;letter-spacing:0}
+.brief-prompt-help{font-size:11px;line-height:1.6;color:#796b59;margin:17px 0 24px}
+.brief-prompt-part+.brief-prompt-part{margin-top:22px;padding-top:20px;border-top:1px solid #3b301c25}
+.brief-prompt-part>span{font-size:9px;letter-spacing:.055em;color:#866033}
+.brief-prompt-part p{white-space:pre-wrap;font-size:12px;line-height:1.85;margin-top:9px;overflow-wrap:anywhere}
+.brief-prompt-bottom{display:flex;align-items:center;gap:7px;margin-top:24px;padding-top:17px;border-top:1px solid #3b301c25;color:#796b59;font-size:9px}
+.brief-prompt-bottom>.icon{width:13px;height:13px;flex-shrink:0}
+.brief-run-bar{display:flex;align-items:center;justify-content:space-between;gap:25px;margin-top:35px;padding-top:28px;border-top:1px solid var(--line)}
+.brief-run-bar h2{font-size:27px;margin:10px 0}.brief-run-bar p{font-size:12px;color:var(--mut);line-height:1.8;max-width:410px}.brief-run-bar>.btn{flex-shrink:0}
+.brief-test-empty{display:flex;align-items:center;gap:15px;padding:25px;border:1px dashed var(--line);border-radius:9px;margin-top:25px;color:var(--mut)}
+.brief-test-empty>span{color:var(--amber)}.brief-test-empty p{font-size:12px;line-height:1.8;max-width:600px}
+.brief-results{margin-top:27px;padding:27px;border:1px solid #705236;border-radius:12px;background:#19140e;outline:0}
+.brief-results.passed{border-color:#58694c}.brief-results>header{display:flex;justify-content:space-between;gap:20px;margin-bottom:24px}
+.brief-results h2{font-size:30px;line-height:1.15;margin-top:12px}.brief-results header p{font-size:11px;color:var(--mut);margin-top:10px}
+.brief-result-mark{color:var(--amber)}.passed .brief-result-mark{color:var(--good)}
+.brief-result-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px}
+.brief-simulated{padding:21px;border:1px solid var(--line);border-radius:7px;background:#0f0d0a}
+.brief-simulated>span{font-size:9px;letter-spacing:.05em;color:var(--amber)}
+.brief-simulated pre{font:13px/1.8 var(--body);white-space:pre-wrap;overflow-wrap:anywhere;margin:18px 0 0;color:#d1c7b8}
+.brief-checks h3{font:500 12px var(--body);letter-spacing:0;margin-bottom:17px}.brief-checks ul{list-style:none;padding:0;margin:0}
+.brief-checks li{display:flex;align-items:start;gap:10px;padding:13px 0;border-top:1px solid var(--line-soft)}
+.brief-checks li>.icon{width:15px;height:15px;color:var(--amber);flex-shrink:0;margin-top:2px}.brief-checks li>.icon-check{color:var(--good)}
+.brief-checks strong{display:block;font-size:11px;font-weight:500;line-height:1.7}.brief-checks li span{display:block;font-size:11px;line-height:1.8;color:var(--mut);margin-top:4px}
+.brief-test-next{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid var(--line);padding-top:22px;margin-top:27px}
+.brief-test-next>p{font-size:12px;color:var(--mut);line-height:1.8;max-width:370px}.brief-test-next>.btn{font-size:12px;flex-shrink:0}
+.brief-kit{padding-block:34px}.brief-kit h2{font-size:35px;margin:14px 0}.brief-kit>div>p{font-size:14px;color:var(--mut);line-height:1.8;max-width:580px}
+.brief-kit-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:23px}.brief-kit #brief-copy-status{font-size:11px;margin-top:15px}
+.brief-kit>.studio-guide-preview{margin-top:27px}.brief-kit pre{max-height:420px;font-size:13px;padding:24px}
+@media(max-width:1100px){.brief-intro{gap:25px}.brief-workbench{gap:20px}.brief-prompt-paper{padding:21px}.brief-file{padding:15px}.brief-case-switch{grid-template-columns:1fr}.brief-case-buttons{justify-content:start}}
+@media(max-width:760px){.brief-workbench{grid-template-columns:1fr}.brief-prompt-paper{position:static;margin-top:5px}.brief-result-grid{grid-template-columns:1fr}.brief-prompt-part p,.brief-file>p{font-size:13px}.brief-rules .field select{font-size:16px}.brief-assignment{align-items:start;flex-direction:column}.brief-assignment-action{display:flex;align-items:center;justify-content:space-between;gap:22px;width:100%}.brief-assignment-action>span{margin:0}}
+@media(max-width:600px){.brief-intro{grid-template-columns:1fr;gap:25px}.brief-recipe{padding:24px}.brief-assignment{padding:23px;margin-top:26px;gap:23px}.brief-assignment h2{font-size:29px}.brief-assignment-action{align-items:stretch;flex-direction:column;gap:17px}.brief-disclosure{font-size:10px}.brief-task p{font-size:14px}.brief-case-buttons{gap:7px}.brief-case-buttons button{flex:1;font-size:11px;gap:7px;padding:13px 10px;justify-content:center}.brief-case-description{line-height:1.7}.brief-file{padding:19px 16px}.brief-file-top button{width:44px;height:44px}.brief-file-top span{font-size:10px}.brief-prompt-paper{padding:24px 20px}.brief-prompt-part p{font-size:14px}.brief-run-bar{flex-direction:column;align-items:stretch;gap:20px}.brief-run-bar h2{font-size:28px}.brief-test-empty{padding:20px}.brief-results{padding:24px 17px}.brief-results h2{font-size:28px}.brief-result-grid{gap:22px}.brief-simulated{padding:20px 16px}.brief-simulated pre{font-size:14px}.brief-checks strong,.brief-checks li span{font-size:12px}.brief-test-next{flex-direction:column;align-items:stretch}.brief-kit-actions{flex-direction:column}.brief-kit pre{padding:18px}.context-studio .studio-mobile-stages button{font-size:11px;gap:5px}}
+@media(prefers-reduced-motion:reduce){.brief-file{transition:none}}
+
+.context-studio .studio-transfer-intro{margin-bottom:25px}

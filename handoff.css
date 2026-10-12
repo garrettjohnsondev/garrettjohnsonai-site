@@ -1,0 +1,90 @@
+/* Member studio: Keep an owner in control (handoff rulebook). */
+.hand-case{border:1px solid var(--line);border-radius:12px;background:var(--panel);padding:26px;margin-bottom:40px}
+.hand-case-head h2{font-size:28px;line-height:1.15;margin:12px 0 6px}
+.hand-case-head p{font-size:11px;color:var(--mut)}
+.hand-facts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:28px;margin:22px 0 0;border-top:1px solid var(--line)}
+.hand-facts>div{padding:16px 0;border-bottom:1px solid var(--line-soft)}
+.hand-facts dt{font-size:10px;letter-spacing:.07em;text-transform:uppercase;color:var(--amber);margin-bottom:6px}
+.hand-facts dd{margin:0;font-size:13px;line-height:1.7;color:#ddd3c4}
+.hand-policies{margin-top:22px}
+.hand-policies h3{font-family:var(--body);font-size:12px;font-weight:600;letter-spacing:0;margin-bottom:12px}
+.hand-policies ul{list-style:none;padding:0;margin:0;display:grid;gap:11px}
+.hand-policies li{display:flex;gap:10px;align-items:start;font-size:13px;line-height:1.7;color:#cfc5b6}
+.hand-policies li>.icon{width:16px;height:16px;color:var(--amber);flex-shrink:0;margin-top:3px}
+
+.hand-block{margin-top:42px;padding-top:36px;border-top:1px solid var(--line)}
+.hand-case+.hand-block{margin-top:0;padding-top:0;border-top:0}
+.hand-section-heading{display:flex;align-items:start;gap:14px;margin-bottom:22px}
+.hand-section-heading h2{font-size:28px;line-height:1.15;outline:0}
+.hand-section-heading p{font-size:12px;line-height:1.8;color:var(--mut);margin-top:10px;max-width:640px}
+
+.hand-wizard{display:flex;gap:12px;align-items:start;background:#eae2d3;color:#2b261f;border:1px solid #f7eddd;border-radius:10px;padding:16px 18px;margin-bottom:20px;box-shadow:0 12px 30px #0002}
+.hand-wizard>.icon{width:18px;height:18px;color:#8d602e;flex-shrink:0;margin-top:2px}
+.hand-wizard span{display:block;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:#776c5d;margin-bottom:5px}
+.hand-wizard q{font-size:16px;font-weight:600;line-height:1.5}
+
+.hand-rule-list{border-top:1px solid var(--line)}
+.hand-rule{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,310px);gap:24px;align-items:center;padding:16px 0;border-bottom:1px solid var(--line)}
+.hand-rule-text strong{display:block;font-size:14px;font-weight:500;line-height:1.55}
+.hand-rule-text span{display:block;font-size:12px;color:var(--mut);margin-top:5px;line-height:1.6}
+.hand-rule-select{display:block;min-width:0}
+.hand-rule-select select{display:block;width:100%;min-width:0;min-height:46px;background:var(--ground);border:1px solid #53432f;border-radius:7px;color:var(--ink);padding:11px 12px;font-size:13px;line-height:1.4}
+
+.hand-fields{border:0;padding:0;margin:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.hand-fields .studio-claim{font-size:13px;padding:15px 14px;line-height:1.6}
+
+.hand-run-action{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.hand-run-action .btn[disabled]{opacity:.7;cursor:progress}
+.hand-stale{font-size:12px;color:var(--amber);max-width:380px;line-height:1.6}
+.hand-error{display:flex;gap:10px;align-items:start;margin-top:24px;padding:16px 18px;border:1px solid #754535;background:#291b14;border-radius:9px;font-size:13px;line-height:1.6}
+.hand-error>.icon{width:17px;height:17px;color:var(--bad);flex-shrink:0;margin-top:2px}
+
+.hand-result.is-stale{opacity:.62}
+.hand-metrics{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin:24px 0 6px}
+.hand-metric{border:1px solid var(--line);border-radius:9px;background:#120f0b;padding:14px 13px;min-width:0}
+.hand-metric strong{display:block;font-family:var(--display);font-size:30px;line-height:1;letter-spacing:-.02em}
+.hand-metric span{display:block;font-size:11px;line-height:1.45;margin-top:9px;color:var(--ink)}
+.hand-metric small{display:block;font-size:10px;color:var(--mut);margin-top:6px}
+.hand-metric.on-target strong{color:var(--good)}
+.hand-metric.off-target strong{color:var(--amber)}
+
+.studio-review-result .hand-calls{list-style:none;padding:0;margin:22px 0 0}
+.studio-review-result .hand-call{display:block;padding:18px 0;border-top:1px solid #ffffff12;font-size:13px}
+.hand-call-head{display:flex;justify-content:space-between;align-items:center;gap:14px;font-size:11px;color:var(--mut)}
+.hand-call-head em{font-style:normal;font-size:10px;letter-spacing:.04em;padding:4px 9px;border-radius:999px;border:1px solid #754535;color:var(--bad);white-space:nowrap}
+.hand-call.verdict-ok .hand-call-head em{border-color:#526349;color:var(--good)}
+.hand-call.verdict-escalated .hand-call-head em,.hand-call.verdict-incomplete .hand-call-head em{border-color:#7a5a32;color:var(--amber)}
+.hand-call blockquote{margin:10px 0 0;font-size:15px;line-height:1.6;color:#e0d8cb}
+.studio-review-result .hand-call p{font-size:13px;color:#cfc5b6;line-height:1.7;margin-top:8px}
+.studio-review-result .hand-call p.hand-call-rule{font-size:11px;color:var(--mut);margin-top:10px}
+.studio-review-result .hand-call p.hand-call-note{display:flex;gap:9px;align-items:start;color:var(--amber)}
+.hand-call-note>.icon{width:15px;height:15px;flex-shrink:0;margin-top:3px}
+.hand-next{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;margin-top:6px;padding-top:22px;border-top:1px solid #ffffff12}
+.hand-next p{font-size:13px;color:var(--ink)}
+
+.hand-transfer-call{margin:18px 0 26px;padding:22px 24px;border-left:2px solid var(--amber);background:var(--panel);border-radius:0 10px 10px 0;font-size:20px;line-height:1.5;color:var(--ink)}
+.hand-transfer-call cite{display:block;font-size:11px;font-style:normal;color:var(--mut);margin-top:10px}
+.hand-case-recall{margin:22px 0 26px;font-size:12px}
+.hand-case-recall summary{cursor:pointer;min-height:40px;color:var(--ink)}
+.hand-case-recall .hand-case{margin:14px 0 0}
+
+@media(max-width:1100px){
+  .hand-rule{grid-template-columns:minmax(0,1fr) minmax(0,250px);gap:18px}
+  .hand-metrics{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:760px){
+  .hand-case{padding:21px}
+  .hand-facts{grid-template-columns:1fr}
+  .hand-rule{grid-template-columns:1fr;gap:12px}
+  .hand-rule-select select{font-size:16px}
+  .hand-fields{grid-template-columns:1fr}
+  .hand-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hand-transfer-call{font-size:17px;padding:18px 19px}
+}
+@media(max-width:600px){
+  .hand-section-heading h2{font-size:24px}
+  .hand-run-action .btn{width:100%}
+  .hand-call-head{flex-direction:column;align-items:start;gap:8px}
+  .hand-next .btn{width:100%}
+}
+@media(prefers-reduced-motion:reduce){.hand-result.is-stale{transition:none}}

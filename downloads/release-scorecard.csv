@@ -1,0 +1,6 @@
+Scenario,Dataset,Task completion percent,Unsupported answers percent,Cost per completed task USD,Completion gate percent,Unsupported answer ceiling percent,Meets illustrative numerical gate,Decision notes
+Fictional candidate A,Illustrative teaching example,84,8,0.12,80,2,No,Unsupported answers exceed ceiling
+Fictional candidate B,Illustrative teaching example,78,1,0.18,80,2,No,Completion below threshold
+Fictional candidate C,Illustrative teaching example,92,1,0.24,80,2,Yes,Eligible for controlled pilot; review failures and cost before wider use
+Your baseline,Define representative cases,,,,,,,Record sample size and dates; inspect important failures
+Your candidate,Use the same cases,,,,,,,Set your own gates before testing; include latency and permission checks
